@@ -11,7 +11,7 @@ var Header = React.createClass({
                     <div id="navbar" className="navbar-collapse collapse">
                         <ul className="nav navbar-nav navbar-right">
                             <li className="active">
-                                <a href="/?username=Mikita">{this.props.username || 'Sign in with instagram.'}</a>
+                                <a href="?username=Mikita">{this.props.username || 'Sign in with instagram.'}</a>
                             </li>
                         </ul>
                     </div>
