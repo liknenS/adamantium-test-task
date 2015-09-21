@@ -13,9 +13,6 @@ var CompareSection = React.createClass({
     },
     render: function () {
         var self = this;
-        var labels = this.props.posts.map(function (e, i) {
-            return i + 1;
-        });
         var data = [{
             label: this.state.active,
             values: this.props.posts.map(function (e, i) {

@@ -9,13 +9,14 @@ var ComparePage = React.createClass({
         return (
             <div>
                 <Header username={this.props.username}/>
+
                 <div className="container">
-                        <div className="col-md-6">
-                            <CompareSection posts={this.props.posts}/>
-                        </div>
-                        <div className="col-md-6">
-                            <PostsTable posts={this.props.posts}/>
-                        </div>
+                    <div className="col-md-6">
+                        <CompareSection posts={this.props.posts}/>
+                    </div>
+                    <div className="col-md-6">
+                        <PostsTable posts={this.props.posts}/>
+                    </div>
                 </div>
             </div>
         );
