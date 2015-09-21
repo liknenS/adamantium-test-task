@@ -7,8 +7,8 @@ var mostPopular = [
     },
     {
         username: 'streetleague',
-        comments: 204,
-        likes: 4202,
+        comments: 24,
+        likes: 402,
         imageUrl: "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11917872_1641193632826697_1779748998_n.jpg"
     },
     {

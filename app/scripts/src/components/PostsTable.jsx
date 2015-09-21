@@ -5,7 +5,7 @@ function countFormat(count) {
     var i = 0;
     while (count >= 1000) {
         i++;
-        count = Math.floor(count/1000);
+        count = Math.floor(count / 1000);
     }
     return count + countFormatSuffixs[i];
 
@@ -13,7 +13,6 @@ function countFormat(count) {
 
 var PostsTable = React.createClass({
     render: function () {
-        console.log(this.props.posts);
         var rows = this.props.posts.map(function (p, i) {
             return (
                 <tr key={i}>
