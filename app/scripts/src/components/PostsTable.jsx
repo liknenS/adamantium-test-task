@@ -17,10 +17,10 @@ var PostsTable = React.createClass({
             return (
                 <tr key={i}>
                     <td>{i + 1}</td>
-                    <td><img className="preview_image" src={p.imageUrl}/></td>
-                    <td>{p.username}</td>
-                    <td>{countFormat(p.likes)}</td>
-                    <td>{countFormat(p.comments)}</td>
+                    <td><img className="preview_image" src={p.images.low_resolution.url}/></td>
+                    <td>{p.user.username}</td>
+                    <td>{countFormat(p.likes.count)}</td>
+                    <td>{countFormat(p.comments.count)}</td>
                 </tr>
             );
         });

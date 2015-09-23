@@ -1,7 +1,10 @@
 var React = require('react');
-
 var Header = React.createClass({
+    componentDidMount: function() {
+
+    },
     render: function () {
+        var url = "https://instagram.com/oauth/authorize/?client_id=9ed9e2f2f7014048bc8b261baed15a4c&redirect_uri=http://localhost:8880/&response_type=token";
         return (
             <nav className="navbar navbar-default navbar-fixed-top">
                 <div className="container">
@@ -11,7 +14,7 @@ var Header = React.createClass({
                     <div id="navbar" className="navbar-collapse collapse">
                         <ul className="nav navbar-nav navbar-right">
                             <li className="active">
-                                <a href="?username=Mikita">{this.props.username || 'Sign in with instagram.'}</a>
+                                <a href={this.props.username?'#':url}>{this.props.username || 'Sign in with instagram.'}</a>
                             </li>
                         </ul>
                     </div>

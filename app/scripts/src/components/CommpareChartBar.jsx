@@ -16,7 +16,7 @@ var CompareSection = React.createClass({
         var data = [{
             label: this.state.active,
             values: this.props.posts.map(function (e, i) {
-                return {x: (i + 1).toString(), y: e[self.state.active]};
+                return {x: (i + 1).toString(), y: e[self.state.active].count};
             })
         }];
         return (
